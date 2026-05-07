@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# -*- encoding: utf-8 -*-
+# Author: Lã Tuấn Kiệt
+# Copyright © 2017 B2B Technology
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+
+<templates xml:space="preserve">
+
+    <!-- 🎯 MAIN CONTAINER -->
+    <t t-name="b2b_base_report.PartnerRegistersMain" owl="1">
+        <div class="B2B_ReportMain p-3">
+
+            <!-- 🔹 Bộ lọc -->
+            <div class="B2B_ReportFiltersSection mb-3">
+                <PartnerRegistersUserFilters
+                    onApplyFilters.bind="onApply"
+                    onExportXlsx.bind="onExportXlsx"
+                />
+            </div>
+
+            <!-- 🔹 Loader -->
+            <div id="loader" t-ref="loader" class="b2b-loader" style="visibility:hidden;">
+                <div id="top"/><div id="bottom"/><div id="line"/>
+            </div>
+
+            <!-- 🔹 Vùng dữ liệu -->
+            <div class="B2B_ReportDataSection">
+                <t t-if="state.result">
+                    <PartnerRegistersContents t-props="{ result: state.result }"/>
+                </t>
+                <t t-else="">
+                    <div class="alert alert-light text-center text-muted py-4">
+                        <i class="fa fa-info-circle me-1"/> No data available. Please apply filters.
+                    </div>
+                </t>
+            </div>
+        </div>
+    </t>
+
+    <!-- 🎛️ USER FILTERS -->
+    <t t-name="b2b_base_report.PartnerRegistersUserFilters" owl="1">
+        <div class="b2b_base_report_filter card p-3 shadow-sm mb-3">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label class="form-label fw-semibold">Company</label>
+                    <select t-ref="companySelect" class="form-select"></select>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label fw-semibold">Partner Type</label>
+                    <select t-ref="typeSelect" class="form-select">
+                        <option value="all">All</option>
+                        <option value="customer">Customer</option>
+                        <option value="supplier">Vendor</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label fw-semibold">Partner Tags</label>
+                    <select t-ref="tagSelect" class="form-select" multiple="1"></select>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3 align-items-center">
+                <div class="col-md-5">
+                    <div class="d-flex align-items-center">
+                        <div class="form-check form-check-inline me-3">
+                            <input t-ref="activeCheck" type="checkbox" id="chkActive" class="form-check-input"/>
+                            <label for="chkActive" class="form-check-label">Active</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input t-ref="inactiveCheck" type="checkbox" id="chkInactive" class="form-check-input"/>
+                            <label for="chkInactive" class="form-check-label">Inactive</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7 text-end">
+                    <button type="button" class="btn btn-primary me-2" t-on-click="onApply">
+                        <i class="fa fa-filter me-1"/> Apply
+                    </button>
+                    <button type="button" class="btn btn-outline-success" t-on-click="onExportXlsx">
+                        <i class="fa fa-download me-1"/> Export Excel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

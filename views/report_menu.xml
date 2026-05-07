@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# -*- coding: utf-8 -*-
+# Author: Lã Tuấn Kiệt
+# Copyright © 2017 B2B Technology
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+
+<odoo>
+
+    <!-- 🌐 INVENTORY REPORT MENU -->
+    <menuitem id="menu_b2b_warehouse_reports"
+        name="Enterprise Reporting"
+        parent="stock.menu_warehouse_report"
+        sequence="99" />
+
+    <!-- 📦 PRODUCT REGISTERS REPORT -->
+    <record id="action_product_registers_report" model="ir.actions.client">
+        <field name="name">Product Registers</field>
+        <field name="tag">product_registers_report</field>
+        <field name="target">main</field>
+    </record>
+
+    <menuitem id="menu_product_registers"
+        name="Product Registers"
+        parent="menu_b2b_warehouse_reports"
+        sequence="1"
+        action="action_product_registers_report" />
+
+    <!-- 📊 PRODUCT REGISTERS XLSX EXPORT -->
+    <record id="product_registers_xlsx" model="ir.actions.report">
+        <field name="name">Product Registers</field>
+        <field name="model">product.template</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">b2b_base_report.product_registers_xlsx</field>
+        <field name="report_file">product_registers</field>
+    </record>
+
+
+    <!-- 💼 SALES REPORT MENU -->
+    <menuitem id="menu_b2b_sale_reports"
+        name="Enterprise Reporting"
+        parent="sale.menu_sale_report"
+        sequence="10" />
+
+    <menuitem id="menu_sale_product_registers"
+        name="Product Registers"
+        parent="menu_b2b_sale_reports"
+        sequence="1"
+        action="action_product_registers_report" />
+
+
+    <!-- 🧾 PURCHASE REPORT MENU -->
+    <menuitem id="menu_b2b_purchase_reports"
+        name="Enterprise Reporting"
+        parent="purchase.purchase_report"
+        sequence="10" />
+
+    <menuitem id="menu_purchase_product_registers"
+        name="Product Registers"
+        parent="menu_b2b_purchase_reports"
+        sequence="1"
+        action="action_product_registers_report" />
+
+
+    <!-- ========================================================= -->
+    <!-- 🧍‍♂️ PARTNER REGISTERS REPORT -->
+    <!-- ========================================================= -->
+
+    <!-- 🧭 ACTION -->
+    <record id="action_partner_registers_report" model="ir.actions.client">
+        <field name="name">Partner Registers</field>
+        <field name="tag">partner_registers_report</field>
+        <field name="target">main</field>
+    </record>
+
+    <!-- 📊 REPORT DEFINITION (XLSX) -->
+    <record id="partner_registers_xlsx" model="ir.actions.report">
+        <field name="name">Partner Registers</field>
+        <field name="model">res.partner</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">b2b_base_report.partner_registers_xlsx</field>
+        <field name="report_file">partner_registers</field>
+    </record>
+
+    <!-- 🧭 MENU (Warehouse) -->
+    <menuitem id="menu_partner_registers"
+        name="Partner Registers"
+        parent="menu_b2b_warehouse_reports"
+        sequence="2"
+        action="action_partner_registers_report" />
+
+    <!-- 🧭 MENU (Sales) -->
+    <menuitem id="menu_sale_partner_registers"
+        name="Partner Registers"
+        parent="menu_b2b_sale_reports"
+        sequence="2"
+        action="action_partner_registers_report" />
+
+    <!-- 🧭 MENU (Purchase) -->
+    <menuitem id="menu_purchase_partner_registers"
+        name="Partner Registers"
+        parent="menu_b2b_purchase_reports"
+        sequence="2"
+        action="action_partner_registers_report" />
+
+</odoo>

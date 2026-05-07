@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- PDF REPORTS : paperformat -->
+    <record id="report_pdf_A4" model="report.paperformat">
+        <field name="name">VN Paper A4</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">28</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">10</field>
+        <field name="margin_right">10</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">20</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <record id="report_pdf_A4_no_header" model="report.paperformat">
+        <field name="name">VN Paper A4 no header</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">15</field>
+        <field name="margin_left">18</field>
+        <field name="margin_right">6</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">20</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <!-- Define A5 paperformat -->
+    <record id="report_pdf_A5" model="report.paperformat">
+        <field name="name">VN Paper A5</field>
+        <field name="default" eval="False"/>
+        <field name="format">A5</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">18</field>
+        <field name="margin_bottom">12</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">14</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <!-- Define Base Report Layout -->
+    <template id="b2b_base_report.bispro_base_layout">
+        <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+            <div class="row mb4" style="border-bottom: 1px solid black;">
+                <t t-if="company.logo">
+                    <div class="col-3 mb4">
+                        <img t-att-src="image_data_uri(company.logo)" style="max-height: 45px;" alt="Logo"/>
+                    </div>
+                    <div class="col-9">
+                        <strong t-field="company.name"/>
+                        <br/>
+                        <strong style="font-size: 14px;">Address:  </strong>
+                        <span style="font-size: 14px;" t-field="company.street"/>
+                        <br/>
+                        <strong style="font-size: 14px;">Tax ID:  </strong>
+                        <t t-if="company.company_registry">
+                            <span style="font-size: 14px;" t-esc="company.company_registry"/>
+                        </t>
+                        <t t-if="not company.company_registry">
+                            <span style="font-size: 14px;" t-esc="company.vat"/>
+                        </t>
+                    </div>
+                </t>
+                <t t-else="else">
+                    <div class="col-9">
+                        <strong t-field="company.name"/>
+                        <br/>
+                        <strong style="font-size: 14px;">Address:  </strong>
+                        <span style="font-size: 14px;" t-field="company.street"/>
+                        <br/>
+                        <strong style="font-size: 14px;">Tax ID:  </strong>
+                        <t t-if="company.company_registry">
+                            <span style="font-size: 14px;" t-esc="company.company_registry"/>
+                        </t>
+                        <t t-if="not company.company_registry">
+                            <span style="font-size: 14px;" t-esc="company.vat"/>
+                        </t>
+                    </div>
+                </t>
+            </div>
+        </div>
+
+        <div t-attf-class="article o_report_layout_standard o_company_#{company.id}_layout"  t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+            <t t-raw="0"/>
+        </div>
+
+        <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
+            <div class="row align-items-center" style="border-top: 1px solid black;">
+                <div class="col-8 text-left">
+                    Print Date: <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y %H:%M')"/>
+                </div>
+                <div class="col-4 text-muted text-right">
+                    Page: <span class="page"/> / <span class="topage"/>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</odoo>

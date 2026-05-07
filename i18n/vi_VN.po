@@ -1,0 +1,648 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* b2b_base_report
+#
+# Translators:
+# Kiet La Tuan <latuankiet@gmail.com>, 2019
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-02 09:03+0000\n"
+"PO-Revision-Date: 2020-11-02 09:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: b2b_base_report
+#: model_terms:ir.ui.view,arch_db:b2b_base_report.bispro_base_layout
+msgid ""
+"<br/>\n"
+"                        <strong style=\"font-size: 14px;\">Address:  </strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong style=\"font-size: 14px;\">Địa chỉ:  </strong>"
+
+#. module: b2b_base_report
+#: model_terms:ir.ui.view,arch_db:b2b_base_report.bispro_base_layout
+msgid ""
+"<br/>\n"
+"                        <strong style=\"font-size: 14px;\">Tax ID:  </strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong style=\"font-size: 14px;\">Mã số thuế:  </strong>"
+
+#. module: b2b_base_report
+#: model:ir.model,name:b2b_base_report.model_report_b2b_base_report_abstract_excel_report
+msgid "Abstract Excel used for export report data to excel file."
+msgstr ""
+
+#. module: b2b_base_report
+#: model:ir.model,name:b2b_base_report.model_report_abstract_report
+msgid "Abstract Report used for design web report data."
+msgstr ""
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Activation"
+msgstr "Hiệu lực"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Activation:"
+msgstr "Hiệu lực:"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Active"
+msgstr "Hoạt động"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Active Only"
+msgstr "Chỉ hoạt động"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Active Products"
+msgstr "Sản phẩm còn hiệu lực"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "All"
+msgstr "Tất cả"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "All Customer and Supplier"
+msgstr "Tất cả khách hàng và nhà cung cấp"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#, python-format
+msgid "All Partner"
+msgstr "Tất cả đối tác"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#, python-format
+msgid "All Product"
+msgstr "Tất cả sản phẩm"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "All Product Type"
+msgstr "Tất cả loại sản phẩm"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "All Products"
+msgstr "Tất cả sản phẩm"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Apply"
+msgstr "Xác nhận"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Base Cost"
+msgstr "Giá vốn"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Base UoM"
+msgstr "Đơn vị tính"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Category"
+msgstr "Ngành hàng"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "City"
+msgstr "Quận/huyện/Tp"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Code"
+msgstr "Mã"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Company"
+msgstr "Công ty"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Consumable"
+msgstr "Hàng tiêu dùng"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Contact Tags"
+msgstr "Thẻ đối tác"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Customer Only"
+msgstr "Chỉ khách hàng"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#, python-format
+msgid "Def Code"
+msgstr "Mã tham chiếu"
+
+#. module: b2b_base_report
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_abstract_report__display_name
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_abstract_excel_report__display_name
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_partner_registers_xlsx__display_name
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_product_registers_xlsx__display_name
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_partner_registers__display_name
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_product_registers__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: b2b_base_report
+#: model:ir.ui.menu,name:b2b_base_report.menu_b2b_purchase_reports
+#: model:ir.ui.menu,name:b2b_base_report.menu_b2b_sale_reports
+#: model:ir.ui.menu,name:b2b_base_report.menu_b2b_warehouse_reports
+msgid "Enterprise Reporting"
+msgstr "Báo cáo chuyên sâu"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Excel"
+msgstr "Excel"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Expand all"
+msgstr "Mở rộng"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Filter"
+msgstr "Bộ lọc"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/models/abstract_report.py:0
+#, python-format
+msgid "Form content is missing, this report cannot be printed."
+msgstr "Nội dung biểu mẫu bị thiếu, báo cáo này không thể được in."
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Full Name"
+msgstr "Tên đầy đủ"
+
+#. module: b2b_base_report
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_abstract_report__id
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_abstract_excel_report__id
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_partner_registers_xlsx__id
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_product_registers_xlsx__id
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_partner_registers__id
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_product_registers__id
+msgid "ID"
+msgstr ""
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Inactive"
+msgstr "Hết hiệu lực"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Inactive Only"
+msgstr "Chỉ hết hiệu lực"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Inactive Products"
+msgstr "Các sản phẩm hết hiệu lực"
+
+#. module: b2b_base_report
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_abstract_report____last_update
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_abstract_excel_report____last_update
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_partner_registers_xlsx____last_update
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_b2b_base_report_product_registers_xlsx____last_update
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_partner_registers____last_update
+#: model:ir.model.fields,field_description:b2b_base_report.field_report_product_registers____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối"
+
+#. module: b2b_base_report
+#: model_terms:ir.ui.view,arch_db:b2b_base_report.bispro_base_layout
+msgid "Logo"
+msgstr ""
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Merge all"
+msgstr "Thu hẹp"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Mobile"
+msgstr "Số di động"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "PARTNER REGISTERS"
+msgstr "DANH MỤC ĐỐI TÁC"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "PRODUCT REGISTERS"
+msgstr "DANH MỤC SẢN PHẨM"
+
+#. module: b2b_base_report
+#: model_terms:ir.ui.view,arch_db:b2b_base_report.bispro_base_layout
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Trang: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#, python-format
+msgid "Partner Name"
+msgstr "Tên đối tác"
+
+#. module: b2b_base_report
+#: model:ir.actions.client,name:b2b_base_report.action_partner_registers_report
+#: model:ir.actions.report,name:b2b_base_report.partner_registers_xlsx
+#: model:ir.ui.menu,name:b2b_base_report.menu_purchase_partner_registers
+#: model:ir.ui.menu,name:b2b_base_report.menu_sale_partner_registers
+msgid "Partner Registers"
+msgstr "Danh mục Đối tác"
+
+#. module: b2b_base_report
+#: model:ir.model,name:b2b_base_report.model_report_b2b_base_report_partner_registers_xlsx
+#: model:ir.model,name:b2b_base_report.model_report_partner_registers
+msgid "Partner Registers is a report that get the list of partner in system."
+msgstr ""
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Partner Type"
+msgstr "Loại đối tác"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Partner Type:"
+msgstr "Loại đối tác:"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Phone"
+msgstr "Điện thoại"
+
+#. module: b2b_base_report
+#: model_terms:ir.ui.view,arch_db:b2b_base_report.bispro_base_layout
+msgid "Print Date:"
+msgstr "Ngày in:"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Product Name"
+msgstr "Tên sản phẩm"
+
+#. module: b2b_base_report
+#: model:ir.actions.client,name:b2b_base_report.action_product_registers_report
+#: model:ir.actions.report,name:b2b_base_report.product_registers_xlsx
+#: model:ir.ui.menu,name:b2b_base_report.menu_product_registers
+#: model:ir.ui.menu,name:b2b_base_report.menu_purchase_product_registers
+#: model:ir.ui.menu,name:b2b_base_report.menu_sale_product_registers
+msgid "Product Registers"
+msgstr "Danh mục Sản phẩm"
+
+#. module: b2b_base_report
+#: model:ir.model,name:b2b_base_report.model_report_b2b_base_report_product_registers_xlsx
+#: model:ir.model,name:b2b_base_report.model_report_product_registers
+msgid "Product Registers is a report that get the list of product in system."
+msgstr ""
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Product Type"
+msgstr "Loại sản phẩm"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Product Type:"
+msgstr "Loại sản phẩm:"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Province"
+msgstr "Tỉnh/Tp"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Purchase Only"
+msgstr "Chỉ mua"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Sale Only"
+msgstr "Chỉ bán"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Sale Price"
+msgstr "Giá bán"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Sale Team"
+msgstr "Đội ngũ bán hàng"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/js/product_registers_report.js:0
+#, python-format
+msgid "Select Category ..."
+msgstr "Chọn ngành hàng ..."
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/js/partner_registers_report.js:0
+#, python-format
+msgid "Select Tags ..."
+msgstr "chọn nhãn ..."
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/js/partner_registers_report.js:0
+#, python-format
+msgid "Select partner type ..."
+msgstr "chọn loại đối tác ..."
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/js/product_registers_report.js:0
+#, python-format
+msgid "Select product type ..."
+msgstr "Chọn loại vật tư ..."
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Service"
+msgstr "Dịch vụ"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Short Name"
+msgstr "Tên tắt"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#, python-format
+msgid "Short cut"
+msgstr "Tên tắt"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Shortcut"
+msgstr "Tên tắt"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#, python-format
+msgid "Shortname"
+msgstr "Tên tắt"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Show Attribute"
+msgstr "Hiển thị thuộc tính"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Storable Product"
+msgstr "Hàng lưu kho"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Supplier Only"
+msgstr "Chỉ nhà cung cấp"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/partner_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "Tax Registry"
+msgstr "Mã số thuế"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#, python-format
+msgid "Unit Cost"
+msgstr "Giá vốn"
+
+#. module: b2b_base_report
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#, python-format
+msgid "UoM"
+msgstr "ĐvT"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Volume"
+msgstr "Thể tích"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/report/product_registers_xlsx.py:0
+#: code:addons/b2b_base_report/static/src/xml/report_product_registers.xml:0
+#, python-format
+msgid "Weight"
+msgstr "Trọng lượng"
+
+#. module: b2b_base_report
+#. openerp-web
+#: code:addons/b2b_base_report/static/src/xml/report_partner_registers.xml:0
+#, python-format
+msgid "contact"
+msgstr "Liên hệ"
